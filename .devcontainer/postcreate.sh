@@ -1,8 +1,9 @@
 #/bin/bash
 
 # This is just a script following the install steps from here: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
-# I've removed `sudo` from each command
-# Ensure dependencies are installed first. Note that there's no sudo because this is for a rootless docker config.
+# I've removed `sudo` from each command because I'm running Docker in rootless mode. See details on how to do that here: https://docs.docker.com/engine/security/rootless/
+# You  will need to add those back in if you're running regular Docker.
+
 apt-get update && apt-get install -y gnupg software-properties-common
 
 
