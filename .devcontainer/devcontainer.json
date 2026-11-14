@@ -24,5 +24,15 @@
 
     "remoteUser": "root",
     "containerUser": "root",
-	"runArgs": ["--env-file",".devcontainer/devcontainer.env"]
+	"runArgs": [
+		"--env-file",
+		".devcontainer/devcontainer.env"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"hashicorp.terraform"
+			]
+		}
+	}
 }
