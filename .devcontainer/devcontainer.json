@@ -6,7 +6,8 @@
 	"image": "mcr.microsoft.com/devcontainers/base:resolute",
 	"features": {
 		"ghcr.io/devcontainers/features/git": {},
-		"ghcr.io/devcontainers/features/github-cli": {}
+		"ghcr.io/devcontainers/features/github-cli": {},
+		"ghcr.io/devcontainers/features/aws-cli": {},
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -22,5 +23,6 @@
 	// "customizations": {},
 
     "remoteUser": "root",
-    "containerUser": "root"
+    "containerUser": "root",
+	"runArgs": ["--env-file",".devcontainer/devcontainer.env"]
 }
