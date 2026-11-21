@@ -1,4 +1,5 @@
 labs/terraform/.terraform
+labs/development/.terraform
 terraform.tfstate
 terraform.tfstate.backup
 devcontainer.env

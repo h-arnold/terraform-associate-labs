@@ -53,7 +53,7 @@ touch main.tf variables.tf providers.tf outputs.tf
 
 In the new `development` environment's `main.tf` file, add the following configuration to query AWS information:
 
-```hcl
+``` hcl
 # Get information about available AZs
 data "aws_availability_zones" "available" {
   state = "available"
